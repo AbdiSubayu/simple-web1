@@ -2,30 +2,50 @@
 <html>
 <head>
 	<title>PENDAFTARAN ANGGOTA BARU</title>
-	<link rel="stylesheet" href="ini.css">
+	<link rel="stylesheet" type="text/css" href="ini.css">
+	<script type="text/javascript" src="sop/react.js"></script>
+	<script type="text/javascript" src="sop/react-dom.js"></script>
+	<script type="text/javascript" src="sop/browser.min.js"></script>
 </head>
 <body>
-<div class="wawank">
-		</div>
-		<div class="sambalado">
-			<center>PENDAFTARAN ANGGOTA BARU
-			<table align="center">
-				<tr>
-					<td>Nama Lengkap</td> <td>:</td> <td><input type="text"></td>
-				</tr>
-				<tr>
-					<td>Tempat Lahir</td> <td>:</td> <td><input type="text"></td>
-				</tr>
-				<tr>
-					<td>Alamat Lengkap</td> <td>:</td> <td><input type="text"></td>
-				</tr>
-				<tr>
-					<td>No Telepon</td> <td>:</td> <td><input type="text"></td>
-				</tr>
-				<tr>
-					<td> &nbsp </td> <td> &nbsp </td> <td><input type="submit" value="DAFTAR"></td>
-				</tr>
+	<div id="wawank"></div>
+	<script type="text/babel">
+		function Wawank(){
+			return <div className="header">
+		PENDAFTARAN ANGGOTA BARU
+	</div>;
+		}
+		function Content(){
+			return <div className="content">
+		<center>FORM REGISTRASI</center>
+		<Belajar />
+		</div>;
+		}
+		function Belajar(){
+			return <table className="wawa">
+			<tr>
+				<td>Nama Lengkap</td><td>:</td><td><input type="text" /></td>
+			</tr>
+			<tr>
+				<td>Alamat Email</td><td>:</td><td><input type="text" /></td>
+			</tr>
+			<tr>
+				<td>Alamat Rumah</td><td>:</td><td><input type="text" /></td>
+			</tr>
+			<tr>
+				<td>Nomor Telepon</td><td>:</td><td><input type="text" /></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td><input type="submit" value="DAFTAR" /></td>
+			</tr>
 			</table>
-		</div>
+		}
+		function Tempat(){
+			return <div> <Wawank /> <Content />
+			</div>
+		}
+		ReactDOM.render(<Tempat />,
+		document.getElementById('wawank'));
+		</script>
 </body>
 </html>

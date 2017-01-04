@@ -1,22 +1,27 @@
 body{
-margin: 0px;
-padding: 0px;
+	margin: 0%;
+	padding: 0px;
 }
-.wawank {
-width: 100%;
-height: 40px;
-background-color: #050514;
-color: white;
-font-size: 24px;
-text-align: center;
-font-weight: bold;
-line-height: 40px;
+.header{
+	width: 100%;
+	height: 40px;
+	background-color: #080706;
+	color: white;
+	font-size: 24px;
+	text-align: center;
+	font-weight: bold;
+	line-height: 40px;
 }
-.sambalado {
-width: 100%;
-height: auto;
-border: 1px solid;
-padding-top: 50px;
-padding-bottom: 50px;
-background: url(1234.png);
+.content{
+	border: 1px solid;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-image: url(1234.png);	
+}
+.wawa{
+	align-content: center;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+
 }
